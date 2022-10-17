@@ -16,8 +16,7 @@ void sequences(char string[]) {
     for (i = 0; i < string_length - 2; i++) {
 
         /* If we found a ascending sequence of 3 aplhabethic characters. */
-        if (string[i + 1] - string[i] == 1 && string[i + 2] - string[i + 1] == 1 &&
-            ((string[i] >= 65 && string[i] <= 98) || (string[i] >= 97 && string[i] <= 122))) {
+        if (string[i + 1] - string[i] == 1 && string[i + 2] - string[i + 1] == 1 && ((string[i] >= 65 && string[i] <= 98) || (string[i] >= 97 && string[i] <= 122))) {
 
             /* Will be out iterator and will help us in the removing and shifting of the characters. */
             int j = i + 1;
@@ -36,9 +35,6 @@ void sequences(char string[]) {
             /*Adding the dash. */
             string[i + 1] = '-';
 
-            /* Updating I. */
-            i = j;
-
             /* j in now at the first character after the sequnece. */
             j++;
 
@@ -54,6 +50,9 @@ void sequences(char string[]) {
 
             /* Terminating the string. */
             string[string_length] = '\0';
+
+            /* Updating I. */
+            i += 2;
         }
     }
 }
