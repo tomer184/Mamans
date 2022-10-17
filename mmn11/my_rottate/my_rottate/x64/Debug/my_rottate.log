@@ -1,0 +1,3 @@
+﻿  my_rotatte.c
+C:\Users\tomer\Documents\University\c\my_rottate\my_rottate\my_rotatte.c(28,32): warning C4554: '<<': check operator precedence for possible error; use parentheses to clarify precedence
+  my_rottate.vcxproj -> C:\Users\tomer\Documents\University\c\my_rottate\x64\Debug\my_rottate.exe
