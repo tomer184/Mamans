@@ -42,34 +42,30 @@ void print_in_binary(unsigned int n)
 */
 int main() {
 
-    unsigned int a;
-    int b;
+    unsigned int x;
 
     /* Asking the user for input. */
-    printf("Enter the decimal number to be rotated: \n");
-    scanf("%u", &a);
-
-    printf("Enter the rotation nubmer: \n");
-    scanf("%d", &b);
+    printf("Enter decimal number: \n");
+    scanf("%u", &x);
 
     /* Printing before the rottation. */
     printf("Before rottation, base 2: ");
-    print_in_binary(a);
+    print_in_binary(x);
     printf("\n");
-    printf("Before rottation, base 8: %o\n", a);
-    printf("Before rottation, base 10: %u\n", a);
-    printf("Before rottation, base 16: %X\n", a);
+    printf("Before rottation, base 8: %o\n", x);
+    printf("Before rottation, base 10: %u\n", x);
+    printf("Before rottation, base 16: %X\n", x);
 
     /* Performing the rottation. */
-    a = my_rottate(a, b);
+    x = my_rottate(x, 1);
 
     /* Printing after the rottation. */
     printf("After rottation, base 2: ");
-    print_in_binary(a);
+    print_in_binary(x);
     printf("\n");
-    printf("After rottation, base 8: %o\n", a);
-    printf("After rottation, base 10: %u\n", a);
-    printf("After rottation, base 16: %X\n", a); 
+    printf("After rottation, base 8: %o\n", x);
+    printf("After rottation, base 10: %u\n", x);
+    printf("After rottation, base 16: %X\n", x); 
     
 	return 0;
 }
